@@ -110,23 +110,24 @@
     
             <div class="col-4">
               <p>Categoría</p>
-              <input class="form-control" list="datalistOptions" placeholder="Categoría">
+              
+                <select id="descuento">
 
-              <datalist id="datalistOptions">
-
-                <option value="Estudiante">
-                <option value="Trainee">
-                <option value="Junior">
+                
+                <option value="0">-------</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
                
-              </datalist>
+                </select>
             </div>
           </div>
 
               
       <div class="row pt-5 justify-content-center">
         <div class="col-lg-8">
-              <div class="alert alert-primary" id="total" onclick="resumen()" role="totalapagar">
-                Total a Pagar:$
+              <div class="alert alert-primary" role="totalapagar">
+                Total a Pagar:$ <span id="total">0</span>
               </div> 
 
             </div>
